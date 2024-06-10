@@ -1,0 +1,324 @@
+{
+    "hints": {
+        "initialize_asset(pay)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "create_ticket(pay,string,uint64,string,string,string,string,uint64,uint64,string,uint64,uint64,string,string)(string,uint64,uint64,string,uint64,string,string,uint64,string,string,string,address,address,string)": {
+            "structs": {
+                "output": {
+                    "name": "Ticket",
+                    "elements": [
+                        [
+                            "airline",
+                            "string"
+                        ],
+                        [
+                            "flightNumber",
+                            "uint64"
+                        ],
+                        [
+                            "ticketPrice",
+                            "uint64"
+                        ],
+                        [
+                            "seat",
+                            "string"
+                        ],
+                        [
+                            "departureDate",
+                            "uint64"
+                        ],
+                        [
+                            "departureLocation",
+                            "string"
+                        ],
+                        [
+                            "arrivalLocation",
+                            "string"
+                        ],
+                        [
+                            "arrivalDate",
+                            "uint64"
+                        ],
+                        [
+                            "ticketHolderFirstName",
+                            "string"
+                        ],
+                        [
+                            "ticketHolderLastName",
+                            "string"
+                        ],
+                        [
+                            "ticketHolderPhoneNumber",
+                            "string"
+                        ],
+                        [
+                            "ticketHolderAddress",
+                            "address"
+                        ],
+                        [
+                            "ticketReceiver",
+                            "address"
+                        ],
+                        [
+                            "status",
+                            "string"
+                        ]
+                    ]
+                }
+            },
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "sell_ticket(axfer,string,address,bool)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "buy_ticket(pay,pay,pay,uint64,string,string,string,string)(string,uint64,uint64,string,uint64,string,string,uint64,string,string,string,address,address,string)": {
+            "structs": {
+                "output": {
+                    "name": "Ticket",
+                    "elements": [
+                        [
+                            "airline",
+                            "string"
+                        ],
+                        [
+                            "flightNumber",
+                            "uint64"
+                        ],
+                        [
+                            "ticketPrice",
+                            "uint64"
+                        ],
+                        [
+                            "seat",
+                            "string"
+                        ],
+                        [
+                            "departureDate",
+                            "uint64"
+                        ],
+                        [
+                            "departureLocation",
+                            "string"
+                        ],
+                        [
+                            "arrivalLocation",
+                            "string"
+                        ],
+                        [
+                            "arrivalDate",
+                            "uint64"
+                        ],
+                        [
+                            "ticketHolderFirstName",
+                            "string"
+                        ],
+                        [
+                            "ticketHolderLastName",
+                            "string"
+                        ],
+                        [
+                            "ticketHolderPhoneNumber",
+                            "string"
+                        ],
+                        [
+                            "ticketHolderAddress",
+                            "address"
+                        ],
+                        [
+                            "ticketReceiver",
+                            "address"
+                        ],
+                        [
+                            "status",
+                            "string"
+                        ]
+                    ]
+                }
+            },
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgNjU1MzYgMSAzMgpieXRlY2Jsb2NrIDB4IDB4MTUxZjdjNzUKdHhuIE51bUFwcEFyZ3MKaW50Y18wIC8vIDAKPT0KYm56IG1haW5fbDEwCnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4ZGQxZTAxZmUgLy8gImluaXRpYWxpemVfYXNzZXQocGF5KXZvaWQiCj09CmJueiBtYWluX2w5CnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4YzNiZTdmMjYgLy8gImNyZWF0ZV90aWNrZXQocGF5LHN0cmluZyx1aW50NjQsc3RyaW5nLHN0cmluZyxzdHJpbmcsc3RyaW5nLHVpbnQ2NCx1aW50NjQsc3RyaW5nLHVpbnQ2NCx1aW50NjQsc3RyaW5nLHN0cmluZykoc3RyaW5nLHVpbnQ2NCx1aW50NjQsc3RyaW5nLHVpbnQ2NCxzdHJpbmcsc3RyaW5nLHVpbnQ2NCxzdHJpbmcsc3RyaW5nLHN0cmluZyxhZGRyZXNzLGFkZHJlc3Msc3RyaW5nKSIKPT0KYm56IG1haW5fbDgKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMApwdXNoYnl0ZXMgMHhmNTQ3NmU4MCAvLyAic2VsbF90aWNrZXQoYXhmZXIsc3RyaW5nLGFkZHJlc3MsYm9vbCl2b2lkIgo9PQpibnogbWFpbl9sNwp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDVmNDNiODNlIC8vICJidXlfdGlja2V0KHBheSxwYXkscGF5LHVpbnQ2NCxzdHJpbmcsc3RyaW5nLHN0cmluZyxzdHJpbmcpKHN0cmluZyx1aW50NjQsdWludDY0LHN0cmluZyx1aW50NjQsc3RyaW5nLHN0cmluZyx1aW50NjQsc3RyaW5nLHN0cmluZyxzdHJpbmcsYWRkcmVzcyxhZGRyZXNzLHN0cmluZykiCj09CmJueiBtYWluX2w2CmVycgptYWluX2w2Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CiYmCmFzc2VydApjYWxsc3ViIGJ1eXRpY2tldGNhc3Rlcl83CmludGNfMiAvLyAxCnJldHVybgptYWluX2w3Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMCAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CiYmCmFzc2VydApjYWxsc3ViIHNlbGx0aWNrZXRjYXN0ZXJfNgppbnRjXzIgLy8gMQpyZXR1cm4KbWFpbl9sODoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiBjcmVhdGV0aWNrZXRjYXN0ZXJfNQppbnRjXzIgLy8gMQpyZXR1cm4KbWFpbl9sOToKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKY2FsbHN1YiBpbml0aWFsaXplYXNzZXRjYXN0ZXJfNAppbnRjXzIgLy8gMQpyZXR1cm4KbWFpbl9sMTA6CnR4biBPbkNvbXBsZXRpb24KaW50Y18wIC8vIE5vT3AKPT0KYm56IG1haW5fbDEyCmVycgptYWluX2wxMjoKdHhuIEFwcGxpY2F0aW9uSUQKaW50Y18wIC8vIDAKPT0KYXNzZXJ0CmludGNfMiAvLyAxCnJldHVybgoKLy8gaW5pdGlhbGl6ZV9hc3NldAppbml0aWFsaXplYXNzZXRfMDoKcHJvdG8gMSAwCnR4biBTZW5kZXIKZ2xvYmFsIENyZWF0b3JBZGRyZXNzCj09Ci8vIHVuYXV0aG9yaXplZAphc3NlcnQKaXR4bl9iZWdpbgpwdXNoaW50IDMgLy8gYWNmZwppdHhuX2ZpZWxkIFR5cGVFbnVtCnB1c2hpbnQgMTAwMDAwMDAwMCAvLyAxMDAwMDAwMDAwCml0eG5fZmllbGQgQ29uZmlnQXNzZXRUb3RhbAppbnRjXzAgLy8gMAppdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0RGVjaW1hbHMKcHVzaGJ5dGVzIDB4NDY0YzU5NTMgLy8gIkZMWVMiCml0eG5fZmllbGQgQ29uZmlnQXNzZXRVbml0TmFtZQpwdXNoYnl0ZXMgMHg0NjZjNzk0MzZmNjk2ZSAvLyAiRmx5Q29pbiIKaXR4bl9maWVsZCBDb25maWdBc3NldE5hbWUKZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKaXR4bl9maWVsZCBDb25maWdBc3NldE1hbmFnZXIKZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKaXR4bl9maWVsZCBDb25maWdBc3NldFJlc2VydmUKZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKaXR4bl9maWVsZCBDb25maWdBc3NldEZyZWV6ZQpnbG9iYWwgQ3VycmVudEFwcGxpY2F0aW9uQWRkcmVzcwppdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0Q2xhd2JhY2sKaXR4bl9zdWJtaXQKcmV0c3ViCgovLyBjcmVhdGVfdGlja2V0CmNyZWF0ZXRpY2tldF8xOgpwcm90byAxNCAxCmJ5dGVjXzAgLy8gIiIKZHVwbiA0CmludGNfMCAvLyAwCmR1cApieXRlY18wIC8vICIiCmR1cApmcmFtZV9kaWcgLTE0Cmd0eG5zIFJlY2VpdmVyCmdsb2JhbCBDdXJyZW50QXBwbGljYXRpb25BZGRyZXNzCj09CmFzc2VydAppdHhuX2JlZ2luCnB1c2hpbnQgNCAvLyBheGZlcgppdHhuX2ZpZWxkIFR5cGVFbnVtCmludGNfMCAvLyAwCml0eG5fZmllbGQgRmVlCnR4biBTZW5kZXIKaXR4bl9maWVsZCBBc3NldFJlY2VpdmVyCmZyYW1lX2RpZyAtMTIKaXR4bl9maWVsZCBYZmVyQXNzZXQKaW50Y18yIC8vIDEKaXR4bl9maWVsZCBBc3NldEFtb3VudAppdHhuX3N1Ym1pdAp0eG4gU2VuZGVyCmZyYW1lX2J1cnkgMQpmcmFtZV9kaWcgMQpsZW4KaW50Y18zIC8vIDMyCj09CmFzc2VydAp0eG4gU2VuZGVyCmZyYW1lX2J1cnkgMgpmcmFtZV9kaWcgMgpsZW4KaW50Y18zIC8vIDMyCj09CmFzc2VydApwdXNoYnl0ZXMgMHg2MzcyNjU2MTc0NjU2NCAvLyAiY3JlYXRlZCIKZnJhbWVfYnVyeSAzCmZyYW1lX2RpZyAzCmxlbgppdG9iCmV4dHJhY3QgNiAwCmZyYW1lX2RpZyAzCmNvbmNhdApmcmFtZV9idXJ5IDMKZnJhbWVfZGlnIC04CmZyYW1lX2J1cnkgOApmcmFtZV9kaWcgOApmcmFtZV9idXJ5IDcKcHVzaGludCAxMTIgLy8gMTEyCmZyYW1lX2J1cnkgNQpmcmFtZV9kaWcgNQpmcmFtZV9kaWcgOApsZW4KKwpmcmFtZV9idXJ5IDYKZnJhbWVfZGlnIDYKaW50Y18xIC8vIDY1NTM2CjwKYXNzZXJ0CmZyYW1lX2RpZyA1Cml0b2IKZXh0cmFjdCA2IDAKZnJhbWVfZGlnIC03Cml0b2IKY29uY2F0CmZyYW1lX2RpZyAtNgppdG9iCmNvbmNhdApmcmFtZV9kaWcgLTUKZnJhbWVfYnVyeSA4CmZyYW1lX2RpZyA3CmZyYW1lX2RpZyA4CmNvbmNhdApmcmFtZV9idXJ5IDcKZnJhbWVfZGlnIDYKZnJhbWVfYnVyeSA1CmZyYW1lX2RpZyA1CmZyYW1lX2RpZyA4CmxlbgorCmZyYW1lX2J1cnkgNgpmcmFtZV9kaWcgNgppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDUKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIC00Cml0b2IKY29uY2F0CmZyYW1lX2RpZyAtMgpmcmFtZV9idXJ5IDgKZnJhbWVfZGlnIDcKZnJhbWVfZGlnIDgKY29uY2F0CmZyYW1lX2J1cnkgNwpmcmFtZV9kaWcgNgpmcmFtZV9idXJ5IDUKZnJhbWVfZGlnIDUKZnJhbWVfZGlnIDgKbGVuCisKZnJhbWVfYnVyeSA2CmZyYW1lX2RpZyA2CmludGNfMSAvLyA2NTUzNgo8CmFzc2VydApmcmFtZV9kaWcgNQppdG9iCmV4dHJhY3QgNiAwCmNvbmNhdApmcmFtZV9kaWcgLTEKZnJhbWVfYnVyeSA4CmZyYW1lX2RpZyA3CmZyYW1lX2RpZyA4CmNvbmNhdApmcmFtZV9idXJ5IDcKZnJhbWVfZGlnIDYKZnJhbWVfYnVyeSA1CmZyYW1lX2RpZyA1CmZyYW1lX2RpZyA4CmxlbgorCmZyYW1lX2J1cnkgNgpmcmFtZV9kaWcgNgppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDUKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIC0zCml0b2IKY29uY2F0CmZyYW1lX2RpZyAtMTEKZnJhbWVfYnVyeSA4CmZyYW1lX2RpZyA3CmZyYW1lX2RpZyA4CmNvbmNhdApmcmFtZV9idXJ5IDcKZnJhbWVfZGlnIDYKZnJhbWVfYnVyeSA1CmZyYW1lX2RpZyA1CmZyYW1lX2RpZyA4CmxlbgorCmZyYW1lX2J1cnkgNgpmcmFtZV9kaWcgNgppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDUKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIC0xMApmcmFtZV9idXJ5IDgKZnJhbWVfZGlnIDcKZnJhbWVfZGlnIDgKY29uY2F0CmZyYW1lX2J1cnkgNwpmcmFtZV9kaWcgNgpmcmFtZV9idXJ5IDUKZnJhbWVfZGlnIDUKZnJhbWVfZGlnIDgKbGVuCisKZnJhbWVfYnVyeSA2CmZyYW1lX2RpZyA2CmludGNfMSAvLyA2NTUzNgo8CmFzc2VydApmcmFtZV9kaWcgNQppdG9iCmV4dHJhY3QgNiAwCmNvbmNhdApmcmFtZV9kaWcgLTkKZnJhbWVfYnVyeSA4CmZyYW1lX2RpZyA3CmZyYW1lX2RpZyA4CmNvbmNhdApmcmFtZV9idXJ5IDcKZnJhbWVfZGlnIDYKZnJhbWVfYnVyeSA1CmZyYW1lX2RpZyA1CmZyYW1lX2RpZyA4CmxlbgorCmZyYW1lX2J1cnkgNgpmcmFtZV9kaWcgNgppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDUKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIDEKY29uY2F0CmZyYW1lX2RpZyAyCmNvbmNhdApmcmFtZV9kaWcgMwpmcmFtZV9idXJ5IDgKZnJhbWVfZGlnIDcKZnJhbWVfZGlnIDgKY29uY2F0CmZyYW1lX2J1cnkgNwpmcmFtZV9kaWcgNgpmcmFtZV9idXJ5IDUKZnJhbWVfZGlnIDUKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIDcKY29uY2F0CmZyYW1lX2J1cnkgNApmcmFtZV9kaWcgLTEzCmV4dHJhY3QgMiAwCmJveF9kZWwKcG9wCmZyYW1lX2RpZyAtMTMKZXh0cmFjdCAyIDAKZnJhbWVfZGlnIDQKYm94X3B1dApmcmFtZV9kaWcgLTEzCmV4dHJhY3QgMiAwCmJveF9nZXQKc3RvcmUgMQpzdG9yZSAwCmxvYWQgMQphc3NlcnQKbG9hZCAwCmZyYW1lX2J1cnkgMApyZXRzdWIKCi8vIHNlbGxfdGlja2V0CnNlbGx0aWNrZXRfMjoKcHJvdG8gNCAwCmJ5dGVjXzAgLy8gIiIKZHVwCmludGNfMCAvLyAwCmR1cApieXRlY18wIC8vICIiCmludGNfMCAvLyAwCmR1cApieXRlY18wIC8vICIiCmR1cG4gNgppbnRjXzAgLy8gMApkdXAKYnl0ZWNfMCAvLyAiIgpkdXAKZnJhbWVfZGlnIC0zCmV4dHJhY3QgMiAwCmJveF9nZXQKc3RvcmUgMwpzdG9yZSAyCmxvYWQgMwphc3NlcnQKbG9hZCAyCmZyYW1lX2J1cnkgMTMKZnJhbWVfZGlnIC00Cmd0eG5zIEFzc2V0UmVjZWl2ZXIKZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKPT0KLy8gQXNzZXQgbXVzdCBnbyB0byBzbWFydCBjb250cmFjdCB0byBiZSBhYmxlIHRvIHNlbGwKYXNzZXJ0CmZyYW1lX2RpZyAxMwpleHRyYWN0IDQ2IDMyCmZyYW1lX2J1cnkgMApmcmFtZV9kaWcgMTMKZnJhbWVfZGlnIDEzCmludGNfMCAvLyAwCmV4dHJhY3RfdWludDE2CmZyYW1lX2RpZyAxMwpwdXNoaW50IDE4IC8vIDE4CmV4dHJhY3RfdWludDE2CnN1YnN0cmluZzMKZnJhbWVfYnVyeSAxCmZyYW1lX2RpZyAxMwpmcmFtZV9kaWcgMTMKcHVzaGludCAxOCAvLyAxOApleHRyYWN0X3VpbnQxNgpmcmFtZV9kaWcgMTMKcHVzaGludCAyOCAvLyAyOApleHRyYWN0X3VpbnQxNgpzdWJzdHJpbmczCmZyYW1lX2J1cnkgNApmcmFtZV9kaWcgMTMKcHVzaGludCAyMCAvLyAyMApleHRyYWN0X3VpbnQ2NApmcmFtZV9idXJ5IDUKZnJhbWVfZGlnIDEzCmludGNfMyAvLyAzMgpleHRyYWN0X3VpbnQ2NApmcmFtZV9idXJ5IDYKZnJhbWVfZGlnIDEzCnB1c2hpbnQgMiAvLyAyCmV4dHJhY3RfdWludDY0CmZyYW1lX2J1cnkgMgpmcmFtZV9kaWcgMTMKZnJhbWVfZGlnIDEzCnB1c2hpbnQgMjggLy8gMjgKZXh0cmFjdF91aW50MTYKZnJhbWVfZGlnIDEzCnB1c2hpbnQgMzAgLy8gMzAKZXh0cmFjdF91aW50MTYKc3Vic3RyaW5nMwpmcmFtZV9idXJ5IDcKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxMwpwdXNoaW50IDMwIC8vIDMwCmV4dHJhY3RfdWludDE2CmZyYW1lX2RpZyAxMwpwdXNoaW50IDQwIC8vIDQwCmV4dHJhY3RfdWludDE2CnN1YnN0cmluZzMKZnJhbWVfYnVyeSA4CmZyYW1lX2RpZyAxMwpwdXNoaW50IDEwIC8vIDEwCmV4dHJhY3RfdWludDY0CmZyYW1lX2J1cnkgMwpmcmFtZV9kaWcgMTMKZnJhbWVfZGlnIDEzCnB1c2hpbnQgNDAgLy8gNDAKZXh0cmFjdF91aW50MTYKZnJhbWVfZGlnIDEzCnB1c2hpbnQgNDIgLy8gNDIKZXh0cmFjdF91aW50MTYKc3Vic3RyaW5nMwpmcmFtZV9idXJ5IDEwCmZyYW1lX2RpZyAxMwpmcmFtZV9kaWcgMTMKcHVzaGludCA0MiAvLyA0MgpleHRyYWN0X3VpbnQxNgpmcmFtZV9kaWcgMTMKcHVzaGludCA0NCAvLyA0NApleHRyYWN0X3VpbnQxNgpzdWJzdHJpbmczCmZyYW1lX2J1cnkgMTEKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxMwpwdXNoaW50IDQ0IC8vIDQ0CmV4dHJhY3RfdWludDE2CmZyYW1lX2RpZyAxMwpwdXNoaW50IDExMCAvLyAxMTAKZXh0cmFjdF91aW50MTYKc3Vic3RyaW5nMwpmcmFtZV9idXJ5IDEyCmZyYW1lX2RpZyAtMQppbnRjXzAgLy8gMAo9PQpibnogc2VsbHRpY2tldF8yX2wyCnB1c2hieXRlcyAweDZkNjE3MjZiNjU3NCAvLyAibWFya2V0IgpmcmFtZV9idXJ5IDkKZnJhbWVfZGlnIDkKbGVuCml0b2IKZXh0cmFjdCA2IDAKZnJhbWVfZGlnIDkKY29uY2F0CmZyYW1lX2J1cnkgOQpiIHNlbGx0aWNrZXRfMl9sMwpzZWxsdGlja2V0XzJfbDI6CnB1c2hieXRlcyAweDc0NzI2MTZlNzM2NjY1NzIgLy8gInRyYW5zZmVyIgpmcmFtZV9idXJ5IDkKZnJhbWVfZGlnIDkKbGVuCml0b2IKZXh0cmFjdCA2IDAKZnJhbWVfZGlnIDkKY29uY2F0CmZyYW1lX2J1cnkgOQpzZWxsdGlja2V0XzJfbDM6CmZyYW1lX2RpZyAxCmZyYW1lX2J1cnkgMTcKZnJhbWVfZGlnIDE3CmZyYW1lX2J1cnkgMTYKcHVzaGludCAxMTIgLy8gMTEyCmZyYW1lX2J1cnkgMTQKZnJhbWVfZGlnIDE0CmZyYW1lX2RpZyAxNwpsZW4KKwpmcmFtZV9idXJ5IDE1CmZyYW1lX2RpZyAxNQppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDE0Cml0b2IKZXh0cmFjdCA2IDAKZnJhbWVfZGlnIDIKaXRvYgpjb25jYXQKZnJhbWVfZGlnIDMKaXRvYgpjb25jYXQKZnJhbWVfZGlnIDQKZnJhbWVfYnVyeSAxNwpmcmFtZV9kaWcgMTYKZnJhbWVfZGlnIDE3CmNvbmNhdApmcmFtZV9idXJ5IDE2CmZyYW1lX2RpZyAxNQpmcmFtZV9idXJ5IDE0CmZyYW1lX2RpZyAxNApmcmFtZV9kaWcgMTcKbGVuCisKZnJhbWVfYnVyeSAxNQpmcmFtZV9kaWcgMTUKaW50Y18xIC8vIDY1NTM2CjwKYXNzZXJ0CmZyYW1lX2RpZyAxNAppdG9iCmV4dHJhY3QgNiAwCmNvbmNhdApmcmFtZV9kaWcgNQppdG9iCmNvbmNhdApmcmFtZV9kaWcgNwpmcmFtZV9idXJ5IDE3CmZyYW1lX2RpZyAxNgpmcmFtZV9kaWcgMTcKY29uY2F0CmZyYW1lX2J1cnkgMTYKZnJhbWVfZGlnIDE1CmZyYW1lX2J1cnkgMTQKZnJhbWVfZGlnIDE0CmZyYW1lX2RpZyAxNwpsZW4KKwpmcmFtZV9idXJ5IDE1CmZyYW1lX2RpZyAxNQppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDE0Cml0b2IKZXh0cmFjdCA2IDAKY29uY2F0CmZyYW1lX2RpZyA4CmZyYW1lX2J1cnkgMTcKZnJhbWVfZGlnIDE2CmZyYW1lX2RpZyAxNwpjb25jYXQKZnJhbWVfYnVyeSAxNgpmcmFtZV9kaWcgMTUKZnJhbWVfYnVyeSAxNApmcmFtZV9kaWcgMTQKZnJhbWVfZGlnIDE3CmxlbgorCmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE1CmludGNfMSAvLyA2NTUzNgo8CmFzc2VydApmcmFtZV9kaWcgMTQKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIDYKaXRvYgpjb25jYXQKZnJhbWVfZGlnIDEwCmZyYW1lX2J1cnkgMTcKZnJhbWVfZGlnIDE2CmZyYW1lX2RpZyAxNwpjb25jYXQKZnJhbWVfYnVyeSAxNgpmcmFtZV9kaWcgMTUKZnJhbWVfYnVyeSAxNApmcmFtZV9kaWcgMTQKZnJhbWVfZGlnIDE3CmxlbgorCmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE1CmludGNfMSAvLyA2NTUzNgo8CmFzc2VydApmcmFtZV9kaWcgMTQKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIDExCmZyYW1lX2J1cnkgMTcKZnJhbWVfZGlnIDE2CmZyYW1lX2RpZyAxNwpjb25jYXQKZnJhbWVfYnVyeSAxNgpmcmFtZV9kaWcgMTUKZnJhbWVfYnVyeSAxNApmcmFtZV9kaWcgMTQKZnJhbWVfZGlnIDE3CmxlbgorCmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE1CmludGNfMSAvLyA2NTUzNgo8CmFzc2VydApmcmFtZV9kaWcgMTQKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIDEyCmZyYW1lX2J1cnkgMTcKZnJhbWVfZGlnIDE2CmZyYW1lX2RpZyAxNwpjb25jYXQKZnJhbWVfYnVyeSAxNgpmcmFtZV9kaWcgMTUKZnJhbWVfYnVyeSAxNApmcmFtZV9kaWcgMTQKZnJhbWVfZGlnIDE3CmxlbgorCmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE1CmludGNfMSAvLyA2NTUzNgo8CmFzc2VydApmcmFtZV9kaWcgMTQKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIDAKY29uY2F0CmZyYW1lX2RpZyAtMgpjb25jYXQKZnJhbWVfZGlnIDkKZnJhbWVfYnVyeSAxNwpmcmFtZV9kaWcgMTYKZnJhbWVfZGlnIDE3CmNvbmNhdApmcmFtZV9idXJ5IDE2CmZyYW1lX2RpZyAxNQpmcmFtZV9idXJ5IDE0CmZyYW1lX2RpZyAxNAppdG9iCmV4dHJhY3QgNiAwCmNvbmNhdApmcmFtZV9kaWcgMTYKY29uY2F0CmZyYW1lX2J1cnkgMTMKZnJhbWVfZGlnIC0zCmV4dHJhY3QgMiAwCmJveF9kZWwKcG9wCmZyYW1lX2RpZyAtMwpleHRyYWN0IDIgMApmcmFtZV9kaWcgMTMKYm94X3B1dApyZXRzdWIKCi8vIGJ1eV90aWNrZXQKYnV5dGlja2V0XzM6CnByb3RvIDggMQpieXRlY18wIC8vICIiCmR1cG4gMgppbnRjXzAgLy8gMApkdXAKYnl0ZWNfMCAvLyAiIgpkdXAKaW50Y18wIC8vIDAKZHVwCmJ5dGVjXzAgLy8gIiIKZHVwbiAzCmludGNfMCAvLyAwCmR1cApieXRlY18wIC8vICIiCmR1cApmcmFtZV9kaWcgLTQKZXh0cmFjdCAyIDAKYm94X2dldApzdG9yZSA1CnN0b3JlIDQKbG9hZCA1CmFzc2VydApsb2FkIDQKZnJhbWVfYnVyeSAxMgpmcmFtZV9kaWcgMTIKcHVzaGludCAxMCAvLyAxMApleHRyYWN0X3VpbnQ2NApmcmFtZV9idXJ5IDQKZnJhbWVfZGlnIDEyCmV4dHJhY3QgNzggMzIKZnJhbWVfYnVyeSA2CmZyYW1lX2RpZyAxMgpleHRyYWN0IDQ2IDMyCmZyYW1lX2J1cnkgMQpmcmFtZV9kaWcgLTgKZ3R4bnMgQW1vdW50CmZyYW1lX2RpZyA0Cj09Ci8vIEluc3VmZmljaWVudCBmdW5kcyB0byBidXkgdGlja2V0CmFzc2VydApmcmFtZV9kaWcgLTcKZ3R4bnMgQW1vdW50CmludGNfMCAvLyAwCj4KLy8gSW5zdWZmaWNpZW50IGFtb3VudCBzZW50IHRvIGFpcmxpbmUKYXNzZXJ0CmZyYW1lX2RpZyAtNgpndHhucyBBbW91bnQKaW50Y18wIC8vIDAKPgovLyBJbnN1ZmZpY2llbnQgYW1vdW50IHNlbnQgdG8gVHJhdmVsU21hcnQKYXNzZXJ0CmZyYW1lX2RpZyA2CmZyYW1lX2RpZyAxCiE9CmJ6IGJ1eXRpY2tldF8zX2wyCmZyYW1lX2RpZyAtOApndHhucyBTZW5kZXIKZnJhbWVfZGlnIDYKPT0KLy8gdGlja2V0IG11c3QgYmUgYm91Z2h0IGJ5IGRlc2lnbmF0ZWQgcmVjZWl2ZXIKYXNzZXJ0CmJ1eXRpY2tldF8zX2wyOgpmcmFtZV9kaWcgLTgKZ3R4bnMgUmVjZWl2ZXIKZnJhbWVfZGlnIDEKPT0KLy8gcGF5bWVudCBtdXN0IGdvIHRvIGN1cnJlbnQgdGlja2V0IGhvbGRlcgphc3NlcnQKaXR4bl9iZWdpbgpwdXNoaW50IDQgLy8gYXhmZXIKaXR4bl9maWVsZCBUeXBlRW51bQppbnRjXzAgLy8gMAppdHhuX2ZpZWxkIEZlZQpmcmFtZV9kaWcgLTUKaXR4bl9maWVsZCBYZmVyQXNzZXQKaW50Y18yIC8vIDEKaXR4bl9maWVsZCBBc3NldEFtb3VudAp0eG4gU2VuZGVyCml0eG5fZmllbGQgQXNzZXRSZWNlaXZlcgppdHhuX3N1Ym1pdAp0eG4gU2VuZGVyCmZyYW1lX2J1cnkgMQpmcmFtZV9kaWcgMQpsZW4KaW50Y18zIC8vIDMyCj09CmFzc2VydApmcmFtZV9kaWcgMTIKZnJhbWVfZGlnIDEyCmludGNfMCAvLyAwCmV4dHJhY3RfdWludDE2CmZyYW1lX2RpZyAxMgpwdXNoaW50IDE4IC8vIDE4CmV4dHJhY3RfdWludDE2CnN1YnN0cmluZzMKZnJhbWVfYnVyeSAyCmZyYW1lX2RpZyAxMgpmcmFtZV9kaWcgMTIKcHVzaGludCAxOCAvLyAxOApleHRyYWN0X3VpbnQxNgpmcmFtZV9kaWcgMTIKcHVzaGludCAyOCAvLyAyOApleHRyYWN0X3VpbnQxNgpzdWJzdHJpbmczCmZyYW1lX2J1cnkgNQpmcmFtZV9kaWcgMTIKcHVzaGludCAyMCAvLyAyMApleHRyYWN0X3VpbnQ2NApmcmFtZV9idXJ5IDcKZnJhbWVfZGlnIDEyCmludGNfMyAvLyAzMgpleHRyYWN0X3VpbnQ2NApmcmFtZV9idXJ5IDgKZnJhbWVfZGlnIDEyCnB1c2hpbnQgMiAvLyAyCmV4dHJhY3RfdWludDY0CmZyYW1lX2J1cnkgMwpmcmFtZV9kaWcgMTIKZnJhbWVfZGlnIDEyCnB1c2hpbnQgMjggLy8gMjgKZXh0cmFjdF91aW50MTYKZnJhbWVfZGlnIDEyCnB1c2hpbnQgMzAgLy8gMzAKZXh0cmFjdF91aW50MTYKc3Vic3RyaW5nMwpmcmFtZV9idXJ5IDkKZnJhbWVfZGlnIDEyCmZyYW1lX2RpZyAxMgpwdXNoaW50IDMwIC8vIDMwCmV4dHJhY3RfdWludDE2CmZyYW1lX2RpZyAxMgpwdXNoaW50IDQwIC8vIDQwCmV4dHJhY3RfdWludDE2CnN1YnN0cmluZzMKZnJhbWVfYnVyeSAxMAp0eG4gU2VuZGVyCmZyYW1lX2J1cnkgNgpmcmFtZV9kaWcgNgpsZW4KaW50Y18zIC8vIDMyCj09CmFzc2VydApwdXNoYnl0ZXMgMHg2MjZmNzU2NzY4NzQgLy8gImJvdWdodCIKZnJhbWVfYnVyeSAxMQpmcmFtZV9kaWcgMTEKbGVuCml0b2IKZXh0cmFjdCA2IDAKZnJhbWVfZGlnIDExCmNvbmNhdApmcmFtZV9idXJ5IDExCmZyYW1lX2RpZyAyCmZyYW1lX2J1cnkgMTYKZnJhbWVfZGlnIDE2CmZyYW1lX2J1cnkgMTUKcHVzaGludCAxMTIgLy8gMTEyCmZyYW1lX2J1cnkgMTMKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxNgpsZW4KKwpmcmFtZV9idXJ5IDE0CmZyYW1lX2RpZyAxNAppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDEzCml0b2IKZXh0cmFjdCA2IDAKZnJhbWVfZGlnIDMKaXRvYgpjb25jYXQKZnJhbWVfZGlnIDQKaXRvYgpjb25jYXQKZnJhbWVfZGlnIDUKZnJhbWVfYnVyeSAxNgpmcmFtZV9kaWcgMTUKZnJhbWVfZGlnIDE2CmNvbmNhdApmcmFtZV9idXJ5IDE1CmZyYW1lX2RpZyAxNApmcmFtZV9idXJ5IDEzCmZyYW1lX2RpZyAxMwpmcmFtZV9kaWcgMTYKbGVuCisKZnJhbWVfYnVyeSAxNApmcmFtZV9kaWcgMTQKaW50Y18xIC8vIDY1NTM2CjwKYXNzZXJ0CmZyYW1lX2RpZyAxMwppdG9iCmV4dHJhY3QgNiAwCmNvbmNhdApmcmFtZV9kaWcgNwppdG9iCmNvbmNhdApmcmFtZV9kaWcgOQpmcmFtZV9idXJ5IDE2CmZyYW1lX2RpZyAxNQpmcmFtZV9kaWcgMTYKY29uY2F0CmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE0CmZyYW1lX2J1cnkgMTMKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxNgpsZW4KKwpmcmFtZV9idXJ5IDE0CmZyYW1lX2RpZyAxNAppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDEzCml0b2IKZXh0cmFjdCA2IDAKY29uY2F0CmZyYW1lX2RpZyAxMApmcmFtZV9idXJ5IDE2CmZyYW1lX2RpZyAxNQpmcmFtZV9kaWcgMTYKY29uY2F0CmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE0CmZyYW1lX2J1cnkgMTMKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxNgpsZW4KKwpmcmFtZV9idXJ5IDE0CmZyYW1lX2RpZyAxNAppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDEzCml0b2IKZXh0cmFjdCA2IDAKY29uY2F0CmZyYW1lX2RpZyA4Cml0b2IKY29uY2F0CmZyYW1lX2RpZyAtMwpmcmFtZV9idXJ5IDE2CmZyYW1lX2RpZyAxNQpmcmFtZV9kaWcgMTYKY29uY2F0CmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE0CmZyYW1lX2J1cnkgMTMKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxNgpsZW4KKwpmcmFtZV9idXJ5IDE0CmZyYW1lX2RpZyAxNAppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDEzCml0b2IKZXh0cmFjdCA2IDAKY29uY2F0CmZyYW1lX2RpZyAtMgpmcmFtZV9idXJ5IDE2CmZyYW1lX2RpZyAxNQpmcmFtZV9kaWcgMTYKY29uY2F0CmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE0CmZyYW1lX2J1cnkgMTMKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxNgpsZW4KKwpmcmFtZV9idXJ5IDE0CmZyYW1lX2RpZyAxNAppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDEzCml0b2IKZXh0cmFjdCA2IDAKY29uY2F0CmZyYW1lX2RpZyAtMQpmcmFtZV9idXJ5IDE2CmZyYW1lX2RpZyAxNQpmcmFtZV9kaWcgMTYKY29uY2F0CmZyYW1lX2J1cnkgMTUKZnJhbWVfZGlnIDE0CmZyYW1lX2J1cnkgMTMKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxNgpsZW4KKwpmcmFtZV9idXJ5IDE0CmZyYW1lX2RpZyAxNAppbnRjXzEgLy8gNjU1MzYKPAphc3NlcnQKZnJhbWVfZGlnIDEzCml0b2IKZXh0cmFjdCA2IDAKY29uY2F0CmZyYW1lX2RpZyAxCmNvbmNhdApmcmFtZV9kaWcgNgpjb25jYXQKZnJhbWVfZGlnIDExCmZyYW1lX2J1cnkgMTYKZnJhbWVfZGlnIDE1CmZyYW1lX2RpZyAxNgpjb25jYXQKZnJhbWVfYnVyeSAxNQpmcmFtZV9kaWcgMTQKZnJhbWVfYnVyeSAxMwpmcmFtZV9kaWcgMTMKaXRvYgpleHRyYWN0IDYgMApjb25jYXQKZnJhbWVfZGlnIDE1CmNvbmNhdApmcmFtZV9idXJ5IDEyCmZyYW1lX2RpZyAtNApleHRyYWN0IDIgMApib3hfZGVsCnBvcApmcmFtZV9kaWcgLTQKZXh0cmFjdCAyIDAKZnJhbWVfZGlnIDEyCmJveF9wdXQKZnJhbWVfZGlnIC00CmV4dHJhY3QgMiAwCmJveF9nZXQKc3RvcmUgNwpzdG9yZSA2CmxvYWQgNwphc3NlcnQKbG9hZCA2CmZyYW1lX2J1cnkgMApyZXRzdWIKCi8vIGluaXRpYWxpemVfYXNzZXRfY2FzdGVyCmluaXRpYWxpemVhc3NldGNhc3Rlcl80Ogpwcm90byAwIDAKaW50Y18wIC8vIDAKdHhuIEdyb3VwSW5kZXgKaW50Y18yIC8vIDEKLQpmcmFtZV9idXJ5IDAKZnJhbWVfZGlnIDAKZ3R4bnMgVHlwZUVudW0KaW50Y18yIC8vIHBheQo9PQphc3NlcnQKZnJhbWVfZGlnIDAKY2FsbHN1YiBpbml0aWFsaXplYXNzZXRfMApyZXRzdWIKCi8vIGNyZWF0ZV90aWNrZXRfY2FzdGVyCmNyZWF0ZXRpY2tldGNhc3Rlcl81Ogpwcm90byAwIDAKYnl0ZWNfMCAvLyAiIgppbnRjXzAgLy8gMApieXRlY18wIC8vICIiCmludGNfMCAvLyAwCmJ5dGVjXzAgLy8gIiIKZHVwbiAzCmludGNfMCAvLyAwCmR1cApieXRlY18wIC8vICIiCmludGNfMCAvLyAwCmR1cApieXRlY18wIC8vICIiCmR1cAp0eG5hIEFwcGxpY2F0aW9uQXJncyAxCmZyYW1lX2J1cnkgMgp0eG5hIEFwcGxpY2F0aW9uQXJncyAyCmJ0b2kKZnJhbWVfYnVyeSAzCnR4bmEgQXBwbGljYXRpb25BcmdzIDMKZnJhbWVfYnVyeSA0CnR4bmEgQXBwbGljYXRpb25BcmdzIDQKZnJhbWVfYnVyeSA1CnR4bmEgQXBwbGljYXRpb25BcmdzIDUKZnJhbWVfYnVyeSA2CnR4bmEgQXBwbGljYXRpb25BcmdzIDYKZnJhbWVfYnVyeSA3CnR4bmEgQXBwbGljYXRpb25BcmdzIDcKYnRvaQpmcmFtZV9idXJ5IDgKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgOApidG9pCmZyYW1lX2J1cnkgOQp0eG5hIEFwcGxpY2F0aW9uQXJncyA5CmZyYW1lX2J1cnkgMTAKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMTAKYnRvaQpmcmFtZV9idXJ5IDExCnR4bmEgQXBwbGljYXRpb25BcmdzIDExCmJ0b2kKZnJhbWVfYnVyeSAxMgp0eG5hIEFwcGxpY2F0aW9uQXJncyAxMgpmcmFtZV9idXJ5IDEzCnR4bmEgQXBwbGljYXRpb25BcmdzIDEzCmZyYW1lX2J1cnkgMTQKdHhuIEdyb3VwSW5kZXgKaW50Y18yIC8vIDEKLQpmcmFtZV9idXJ5IDEKZnJhbWVfZGlnIDEKZ3R4bnMgVHlwZUVudW0KaW50Y18yIC8vIHBheQo9PQphc3NlcnQKZnJhbWVfZGlnIDEKZnJhbWVfZGlnIDIKZnJhbWVfZGlnIDMKZnJhbWVfZGlnIDQKZnJhbWVfZGlnIDUKZnJhbWVfZGlnIDYKZnJhbWVfZGlnIDcKZnJhbWVfZGlnIDgKZnJhbWVfZGlnIDkKZnJhbWVfZGlnIDEwCmZyYW1lX2RpZyAxMQpmcmFtZV9kaWcgMTIKZnJhbWVfZGlnIDEzCmZyYW1lX2RpZyAxNApjYWxsc3ViIGNyZWF0ZXRpY2tldF8xCmZyYW1lX2J1cnkgMApieXRlY18xIC8vIDB4MTUxZjdjNzUKZnJhbWVfZGlnIDAKY29uY2F0CmxvZwpyZXRzdWIKCi8vIHNlbGxfdGlja2V0X2Nhc3RlcgpzZWxsdGlja2V0Y2FzdGVyXzY6CnByb3RvIDAgMAppbnRjXzAgLy8gMApieXRlY18wIC8vICIiCmR1cAppbnRjXzAgLy8gMAp0eG5hIEFwcGxpY2F0aW9uQXJncyAxCmZyYW1lX2J1cnkgMQp0eG5hIEFwcGxpY2F0aW9uQXJncyAyCmZyYW1lX2J1cnkgMgp0eG5hIEFwcGxpY2F0aW9uQXJncyAzCmludGNfMCAvLyAwCnB1c2hpbnQgOCAvLyA4CioKZ2V0Yml0CmZyYW1lX2J1cnkgMwp0eG4gR3JvdXBJbmRleAppbnRjXzIgLy8gMQotCmZyYW1lX2J1cnkgMApmcmFtZV9kaWcgMApndHhucyBUeXBlRW51bQpwdXNoaW50IDQgLy8gYXhmZXIKPT0KYXNzZXJ0CmZyYW1lX2RpZyAwCmZyYW1lX2RpZyAxCmZyYW1lX2RpZyAyCmZyYW1lX2RpZyAzCmNhbGxzdWIgc2VsbHRpY2tldF8yCnJldHN1YgoKLy8gYnV5X3RpY2tldF9jYXN0ZXIKYnV5dGlja2V0Y2FzdGVyXzc6CnByb3RvIDAgMApieXRlY18wIC8vICIiCmludGNfMCAvLyAwCmR1cG4gMwpieXRlY18wIC8vICIiCmR1cG4gMwp0eG5hIEFwcGxpY2F0aW9uQXJncyAxCmJ0b2kKZnJhbWVfYnVyeSA0CnR4bmEgQXBwbGljYXRpb25BcmdzIDIKZnJhbWVfYnVyeSA1CnR4bmEgQXBwbGljYXRpb25BcmdzIDMKZnJhbWVfYnVyeSA2CnR4bmEgQXBwbGljYXRpb25BcmdzIDQKZnJhbWVfYnVyeSA3CnR4bmEgQXBwbGljYXRpb25BcmdzIDUKZnJhbWVfYnVyeSA4CnR4biBHcm91cEluZGV4CnB1c2hpbnQgMyAvLyAzCi0KZnJhbWVfYnVyeSAxCmZyYW1lX2RpZyAxCmd0eG5zIFR5cGVFbnVtCmludGNfMiAvLyBwYXkKPT0KYXNzZXJ0CnR4biBHcm91cEluZGV4CnB1c2hpbnQgMiAvLyAyCi0KZnJhbWVfYnVyeSAyCmZyYW1lX2RpZyAyCmd0eG5zIFR5cGVFbnVtCmludGNfMiAvLyBwYXkKPT0KYXNzZXJ0CnR4biBHcm91cEluZGV4CmludGNfMiAvLyAxCi0KZnJhbWVfYnVyeSAzCmZyYW1lX2RpZyAzCmd0eG5zIFR5cGVFbnVtCmludGNfMiAvLyBwYXkKPT0KYXNzZXJ0CmZyYW1lX2RpZyAxCmZyYW1lX2RpZyAyCmZyYW1lX2RpZyAzCmZyYW1lX2RpZyA0CmZyYW1lX2RpZyA1CmZyYW1lX2RpZyA2CmZyYW1lX2RpZyA3CmZyYW1lX2RpZyA4CmNhbGxzdWIgYnV5dGlja2V0XzMKZnJhbWVfYnVyeSAwCmJ5dGVjXzEgLy8gMHgxNTFmN2M3NQpmcmFtZV9kaWcgMApjb25jYXQKbG9nCnJldHN1Yg==",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {},
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "airline_ticket_transfer",
+        "methods": [
+            {
+                "name": "initialize_asset",
+                "args": [
+                    {
+                        "type": "pay",
+                        "name": "mbrPay"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "create_ticket",
+                "args": [
+                    {
+                        "type": "pay",
+                        "name": "boxPay"
+                    },
+                    {
+                        "type": "string",
+                        "name": "confirmationNumber"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "assetId"
+                    },
+                    {
+                        "type": "string",
+                        "name": "firstName"
+                    },
+                    {
+                        "type": "string",
+                        "name": "lastName"
+                    },
+                    {
+                        "type": "string",
+                        "name": "phoneNumber"
+                    },
+                    {
+                        "type": "string",
+                        "name": "airline"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "flightNumber"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "ticketPrice"
+                    },
+                    {
+                        "type": "string",
+                        "name": "seat"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "departureDate"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "arrivalDate"
+                    },
+                    {
+                        "type": "string",
+                        "name": "departureLocation"
+                    },
+                    {
+                        "type": "string",
+                        "name": "arrivalLocation"
+                    }
+                ],
+                "returns": {
+                    "type": "(string,uint64,uint64,string,uint64,string,string,uint64,string,string,string,address,address,string)"
+                }
+            },
+            {
+                "name": "sell_ticket",
+                "args": [
+                    {
+                        "type": "axfer",
+                        "name": "axfer"
+                    },
+                    {
+                        "type": "string",
+                        "name": "confirmationNumber"
+                    },
+                    {
+                        "type": "address",
+                        "name": "ticketReceiver"
+                    },
+                    {
+                        "type": "bool",
+                        "name": "inMarket"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "buy_ticket",
+                "args": [
+                    {
+                        "type": "pay",
+                        "name": "payment"
+                    },
+                    {
+                        "type": "pay",
+                        "name": "fee1"
+                    },
+                    {
+                        "type": "pay",
+                        "name": "fee2"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "assetId"
+                    },
+                    {
+                        "type": "string",
+                        "name": "confirmationNumber"
+                    },
+                    {
+                        "type": "string",
+                        "name": "firstName"
+                    },
+                    {
+                        "type": "string",
+                        "name": "lastName"
+                    },
+                    {
+                        "type": "string",
+                        "name": "phoneNumber"
+                    }
+                ],
+                "returns": {
+                    "type": "(string,uint64,uint64,string,uint64,string,string,uint64,string,string,string,address,address,string)"
+                }
+            }
+        ],
+        "networks": {},
+        "desc": "Sell your plane tickets"
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}

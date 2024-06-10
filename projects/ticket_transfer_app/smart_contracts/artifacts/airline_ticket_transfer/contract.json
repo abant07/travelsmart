@@ -1,0 +1,147 @@
+{
+    "name": "airline_ticket_transfer",
+    "methods": [
+        {
+            "name": "initialize_asset",
+            "args": [
+                {
+                    "type": "pay",
+                    "name": "mbrPay"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "create_ticket",
+            "args": [
+                {
+                    "type": "pay",
+                    "name": "boxPay"
+                },
+                {
+                    "type": "string",
+                    "name": "confirmationNumber"
+                },
+                {
+                    "type": "uint64",
+                    "name": "assetId"
+                },
+                {
+                    "type": "string",
+                    "name": "firstName"
+                },
+                {
+                    "type": "string",
+                    "name": "lastName"
+                },
+                {
+                    "type": "string",
+                    "name": "phoneNumber"
+                },
+                {
+                    "type": "string",
+                    "name": "airline"
+                },
+                {
+                    "type": "uint64",
+                    "name": "flightNumber"
+                },
+                {
+                    "type": "uint64",
+                    "name": "ticketPrice"
+                },
+                {
+                    "type": "string",
+                    "name": "seat"
+                },
+                {
+                    "type": "uint64",
+                    "name": "departureDate"
+                },
+                {
+                    "type": "uint64",
+                    "name": "arrivalDate"
+                },
+                {
+                    "type": "string",
+                    "name": "departureLocation"
+                },
+                {
+                    "type": "string",
+                    "name": "arrivalLocation"
+                }
+            ],
+            "returns": {
+                "type": "(string,uint64,uint64,string,uint64,string,string,uint64,string,string,string,address,address,string)"
+            }
+        },
+        {
+            "name": "sell_ticket",
+            "args": [
+                {
+                    "type": "axfer",
+                    "name": "axfer"
+                },
+                {
+                    "type": "string",
+                    "name": "confirmationNumber"
+                },
+                {
+                    "type": "address",
+                    "name": "ticketReceiver"
+                },
+                {
+                    "type": "bool",
+                    "name": "inMarket"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "buy_ticket",
+            "args": [
+                {
+                    "type": "pay",
+                    "name": "payment"
+                },
+                {
+                    "type": "pay",
+                    "name": "fee1"
+                },
+                {
+                    "type": "pay",
+                    "name": "fee2"
+                },
+                {
+                    "type": "uint64",
+                    "name": "assetId"
+                },
+                {
+                    "type": "string",
+                    "name": "confirmationNumber"
+                },
+                {
+                    "type": "string",
+                    "name": "firstName"
+                },
+                {
+                    "type": "string",
+                    "name": "lastName"
+                },
+                {
+                    "type": "string",
+                    "name": "phoneNumber"
+                }
+            ],
+            "returns": {
+                "type": "(string,uint64,uint64,string,uint64,string,string,uint64,string,string,string,address,address,string)"
+            }
+        }
+    ],
+    "networks": {},
+    "desc": "Sell your plane tickets"
+}
